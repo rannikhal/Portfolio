@@ -1,0 +1,44 @@
+@page
+@using Careoscope.Models;
+@model Careoscope.Pages.DoctorView.CreateAppointmentModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Careoscope</h1>
+</div>
+
+<h3>Create Appointment</h3> <a href="AllAppointments">All Appointments</a>
+
+
+
+<form method="post"> 
+    <div class="form-group">
+        <label asp-for="Patient.PatientID" class="control-label">Patient</label>
+        <select asp-items="Model.PatientDropDown" asp-for="Patient.PatientID" class="form-control">
+            <option value="">-- Select Patient --</option>
+        </select>
+        <span asp-validation-for="Patient.PatientID" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Doctor.DoctorID" class="control-label">Doctor</label>
+        <select asp-items="Model.DoctorDropDown" asp-for="Doctor.DoctorID" class="form-control">
+            <option value="">-- Select Doctor --</option>
+        </select>
+        <span asp-validation-for="Doctor.DoctorID" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Appointment.AppointmentDate" class="control-label"></label>
+        <input asp-for="Appointment.AppointmentDate" class="form-control" />
+        <span asp-validation-for="Appointment.AppointmentDate" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Appointment.ReasonForVisit" class="control-label"></label>
+        <input asp-for="Appointment.ReasonForVisit" class="form-control" />
+        <span asp-validation-for="Appointment.ReasonForVisit" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+</form>
