@@ -1,6 +1,8 @@
 # Careoscope
 
-This project is a scheduler application designed to manage appointments, track patient information, and maintain visit history for a medical clinic.  It provides a user-friendly interface for scheduling appointments, viewing doctor and patient schedules, and recording visit notes.
+This project is a scheduler application designed to manage appointments, track patient information, and maintain visit history for a medical clinic.  It provides a user-friendly interface for scheduling appointments, viewing doctor and patient schedules, and recording visit notes. 
+
+You can also view the code here: https://github.com/rannikhal/Careoscope.git
 
 ## Table of Contents
 
